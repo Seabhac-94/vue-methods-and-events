@@ -18,7 +18,8 @@
   <section id="events">
     <h2>Events in Action</h2>
     <button v-on:click="addCounter(4)">Add 4</button>
-    <button v-on:click.right="subtractCounter(5)">Subtract 5</button>
+    <button v-on:click="subtractCounter(5)">Subtract 5</button>
+    <p v-once>Starting counter: {{ counter }}</p>
     <p>Result: {{ counter }}</p>
     <input type="text" v-on:input="setName($event, 'Allen')" v-on:keyup.enter="confirmInput">
     <p>Your Name: {{ confirmedName }}</p>
